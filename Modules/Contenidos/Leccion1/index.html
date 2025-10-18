@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Java - Lección 1: Instalación y Primer Programa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="../../../script.js" defer></script>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-red-50 text-gray-900">
+
+    <!-- Encabezado con navegación -->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-bold bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+                Curso Java</div>
+            <ul id="mobile-menu" class="hidden md:flex space-x-6">
+                <li><a href="../../../index.html" class="text-gray-700 hover:text-pink-600 transition">Inicio</a></li>
+                <li><a href="../../MainPages/Introduction/index.html"
+                        class="text-gray-700 hover:text-pink-600 transition">Introducción</a></li>
+                <li><a href="../../MainPages/Lecciones/index.html"
+                        class="text-gray-700 hover:text-pink-600 transition">Lecciones</a></li>
+                <li><a href="../../MainPages/Recursos/index.html"
+                        class="text-gray-700 hover:text-pink-600 transition">Recursos</a></li>
+            </ul>
+            <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl">☰</button>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="py-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h1
+                class="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+                Lección 1: Instalación</h1>
+            <p class="text-lg mb-8">En esta lección, aprenderás a instalar Java Development Kit (JDK), Visual Studio
+                Code y a configurar todo para escribir y ejecutar tu primer programa en Java.</p>
+
+            <h2 class="text-2xl font-semibold mb-4 text-red-600">Paso 1: Instalar Java (JDK)</h2>
+            <ol class="list-decimal pl-6 mb-8 space-y-2">
+                <li>
+                    Ve a <a href="https://www.oracle.com/java/technologies/javase-downloads.html"
+                        class="text-pink-600 hover:underline">el sitio oficial de Oracle</a> y descarga la última
+                    versión del JDK para tu sistema operativo (Windows, macOS o Linux).
+                </li>
+                <li>
+                    Ejecuta el instalador y sigue los pasos. En Windows, deja las opciones por defecto y finaliza la
+                    instalación.
+                </li>
+                <li>
+                    Para comprobar que Java está instalado, abre la terminal (o PowerShell) y escribe:
+                    <pre><code>java -version</code></pre>
+                    Deberías ver la versión instalada. Si no, reinicia tu PC.
+                </li>
+            </ol>
+
+            <h2 class="text-2xl font-semibold mb-4 text-pink-600">Paso 2: Instalar Visual Studio Code</h2>
+            <ol class="list-decimal pl-6 mb-8 space-y-2">
+                <li>
+                    Ve a <a href="https://code.visualstudio.com/" class="text-pink-600 hover:underline">la web oficial
+                        de Visual Studio Code</a> y descarga el instalador para tu sistema operativo.
+                </li>
+                <li>
+                    Instala VS Code siguiendo los pasos del asistente.
+                </li>
+            </ol>
+
+            <h2 class="text-2xl font-semibold mb-4 text-orange-600">Paso 3: Configurar VS Code para Java</h2>
+            <ol class="list-decimal pl-6 mb-8 space-y-2">
+                <li>
+                    Abre Visual Studio Code.
+                </li>
+                <li>
+                    Ve a la sección de extensiones (icono de cuadrados a la izquierda o <kbd>Ctrl+Shift+X</kbd>).
+                </li>
+                <li>
+                    Busca e instala la extensión <b>"Extension Pack for Java"</b> de Microsoft. Esto instalará todo lo
+                    necesario para programar en Java (soporte de lenguaje, depuración, autocompletado, etc).
+                </li>
+                <li>
+                    Reinicia VS Code si te lo pide.
+                </li>
+            </ol>
+
+            <h2 class="text-2xl font-semibold mb-4 text-pink-600">Paso 4: Crear y Ejecutar tu Primer Programa</h2>
+            <ol class="list-decimal pl-6 mb-8 space-y-2">
+                <li>
+                    Crea una nueva carpeta para tus proyectos Java y ábrela en VS Code (<b>Archivo &gt; Abrir
+                        carpeta...</b>).
+                </li>
+                <li>
+                    Dentro de la carpeta, crea un archivo llamado <code>HolaMundo.java</code>.
+                </li>
+                <li>
+                    Escribe el siguiente código:
+                    <pre><code>public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("¡Hola, Mundo!");
+    }
+}</code></pre>
+                </li>
+                <li>
+                    Guarda el archivo. Haz clic en el botón de "play" (▶️) que aparece arriba del método
+                    <code>main</code> o haz clic derecho en el archivo y selecciona <b>"Run Java"</b> para ejecutarlo.
+                </li>
+                <li>
+                    Deberías ver el mensaje <b>¡Hola, Mundo!</b> en la terminal de VS Code.
+                </li>
+            </ol>
+
+            <div class="flex justify-between mt-12">
+                <a href="../../MainPages/Lecciones/index.html"
+                    class="bg-gray-600 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition">Volver a
+                    Lecciones</a>
+                <a href="../Leccion2/index.html"
+                    class="bg-gradient-to-r from-red-600 to-pink-600 text-white px-6 py-3 rounded-full hover:shadow-lg transition">Siguiente
+                    Lección</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto" class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p id="copyright"></p>
+            <p class="mt-2">Contacto: aitordev.5@outlook.com</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

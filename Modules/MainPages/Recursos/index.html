@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Java - Recursos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="../../../script.js" defer></script>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-red-50 text-gray-900">
+
+    <!-- Encabezado con navegación -->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-bold bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+                Curso Java
+            </div>
+            <ul id="mobile-menu" class="hidden md:flex space-x-6">
+                <li><a href="../../../index.html" class="text-gray-700 hover:text-pink-600 transition">Inicio</a></li>
+                <li><a href="../Introduction/index.html" class="text-gray-700 hover:text-pink-600 transition">Introducción</a></li>
+                <li><a href="../Lecciones/index.html" class="text-gray-700 hover:text-pink-600 transition">Lecciones</a></li>
+                <li><a href="../Recursos/index.html" class="text-gray-700 hover:text-pink-600 transition">Recursos</a></li>
+            </ul>
+            <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl">☰</button>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-1 flex items-center justify-center py-20">
+        <div class="w-full max-w-3xl px-6">
+            <h1
+                class="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+                Enlaces Útiles</h1>
+
+            <div class="bg-white rounded-xl shadow-xl p-8">
+                <h2 class="text-2xl font-semibold mb-6 text-pink-600 text-center">Recursos de Java</h2>
+                <ul class="text-gray-700 list-disc list-inside space-y-3 text-lg">
+                    <li><a href="https://docs.oracle.com/en/java/" target="_blank"
+                            class="text-pink-600 hover:underline">Documentación Oficial de Java</a></li>
+                    <li><a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank"
+                            class="text-pink-600 hover:underline">Descargar JDK</a></li>
+                    <li><a href="https://www.w3schools.com/java/" target="_blank"
+                            class="text-pink-600 hover:underline">Tutorial Java W3Schools</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/java/" target="_blank"
+                            class="text-pink-600 hover:underline">GeeksforGeeks Java</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto" class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p id="copyright"></p>
+            <p class="mt-2">Contacto: aitordev.5@outlook.com</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

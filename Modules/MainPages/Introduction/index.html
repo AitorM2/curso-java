@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Java - Introducción</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="../../../script.js" defer></script>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-red-50 text-gray-900">
+
+    <!-- Encabezado con navegación -->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-bold bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+                Curso Java</div>
+            <ul id="mobile-menu" class="hidden md:flex space-x-6">
+                <li><a href="../../../index.html" class="text-gray-700 hover:text-pink-600 transition">Inicio</a></li>
+                <li><a href="../Introduction/index.html"
+                        class="text-gray-700 hover:text-pink-600 transition">Introducción</a>
+                </li>
+                <li><a href="../Lecciones/index.html" class="text-gray-700 hover:text-pink-600 transition">Lecciones</a>
+                </li>
+                <li><a href="../Recursos/index.html" class="text-gray-700 hover:text-pink-600 transition">Recursos</a>
+                </li>
+            </ul>
+            <button id="menu-toggle" class="md:hidden text-gray-700 text-2xl">☰</button>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="py-20 flex-1">
+        <div class="container mx-auto px-6">
+            <h1
+                class="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+                Introducción al Curso de Java</h1>
+            <p class="text-lg text-center mb-12 max-w-3xl mx-auto">Bienvenido a este curso completo de Java. Aquí
+                aprenderás desde los conceptos básicos hasta técnicas avanzadas para desarrollar aplicaciones robustas.
+                Este curso está diseñado para principiantes y profesionales que quieran dominar el lenguaje.</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-4 text-red-600">¿Qué es Java?</h2>
+                    <p class="text-gray-700">Java es un lenguaje de programación orientado a objetos, multiplataforma y
+                        ampliamente usado en desarrollo web, móvil y empresarial. Fue creado por Sun Microsystems en
+                        1995.</p>
+                </div>
+                <div class="p-8 bg-gradient-to-br from-pink-50 to-orange-50 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-4 text-pink-600">Requisitos Previos</h2>
+                    <p class="text-gray-700">No necesitas experiencia previa. Solo un ordenador con JDK instalado. Te
+                        guiaremos paso a paso en la instalación y configuración.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="../Lecciones/index.html"
+                    class="bg-gradient-to-r from-red-600 to-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition">Ver
+                    Lecciones</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto" class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p id="copyright"></p>
+            <p class="mt-2">Contacto: aitordev.5@outlook.com</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

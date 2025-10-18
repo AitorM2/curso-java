@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Java - Aprende Programación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-red-50 text-gray-900 font-sans">
+
+    <!-- Encabezado con navegación -->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-bold bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+                Curso Java
+            </div>
+
+            <!-- Menú de escritorio -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#inicio" class="text-gray-700 hover:text-pink-600 transition">Inicio</a></li>
+                <li><a href="#curso" class="text-gray-700 hover:text-pink-600 transition">Sobre el Curso</a></li>
+                <li><a href="#caracteristicas" class="text-gray-700 hover:text-pink-600 transition">Características</a>
+                </li>
+            </ul>
+
+            <!-- Botón hamburguesa -->
+            <button id="menu-toggle" class="md:hidden text-gray-700 text-3xl">☰</button>
+        </nav>
+
+        <!-- Menú móvil -->
+        <ul id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-200">
+            <li><a href="#inicio" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Inicio</a></li>
+            <li><a href="#curso" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Sobre el Curso</a></li>
+            <li><a href="#caracteristicas" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Características</a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="bg-gradient-to-r from-red-500 via-pink-500 to-orange-500 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1
+                class="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                Domina Java: De Principiante a Experto</h1>
+            <p class="text-lg md:text-xl mb-8">Aprende a programar en Java con un curso completo, práctico, diseñado
+                para profesionales y gente que le pique la curiosidad</p>
+            <a href="./Modules/MainPages/Introduction/index.html"
+                class="bg-gradient-to-r from-white to-gray-200 text-red-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition transform hover:scale-105">Comenzar
+                con el curso</a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre el Curso -->
+    <section id="curso" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2
+                class="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">
+                ¿Qué Aprenderás?</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 bg-gradient-to-br from-red-50 to-pink-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-red-600">Fundamentos de Java</h3>
+                    <p class="text-gray-700">Desde variables y bucles hasta clases y objetos. Aprende la sintaxis
+                        esencial de Java con ejemplos prácticos.</p>
+                </div>
+                <div class="p-6 bg-gradient-to-br from-pink-50 to-orange-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-pink-600">Proyectos Reales</h3>
+                    <p class="text-gray-700">Desarrolla aplicaciones como calculadoras, gestores de tareas, entre otros
+                        para aplicar lo aprendido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Características -->
+    <section id="caracteristicas" class="py-16 bg-gradient-to-br from-gray-100 to-red-100">
+        <div class="container mx-auto px-6">
+            <h2
+                class="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                ¿Por Qué Elegir Este Curso?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gradient-to-br from-white to-red-50 rounded-lg shadow-md">
+                    <div
+                        class="bg-gradient-to-r from-red-600 to-pink-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        📚</div>
+                    <h3 class="text-xl font-semibold mb-2 text-red-600">Contenido Actualizado</h3>
+                    <p class="text-gray-700">Basado en las últimas versiones de Java, con enfoque en buenas prácticas.
+                    </p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-white to-pink-50 rounded-lg shadow-md">
+                    <div
+                        class="bg-gradient-to-r from-pink-600 to-orange-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        👨‍🏫</div>
+                    <h3 class="text-xl font-semibold mb-2 text-pink-600">Recursos Intuitivos</h3>
+                    <p class="text-gray-700">Explicaciones claras y concisas pensadas para todo tipo de estudiantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="contacto" class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p id="copyright"></p>
+            <p class="mt-2">Contacto: aitordev.5@outlook.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
